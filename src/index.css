@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html { scroll-behavior: smooth; }
+
+
+
+:focus-visible { outline: 3px solid rgba(37,99,235,0.4); outline-offset: 2px; }
+
+
+/* reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+* { animation-duration: 1ms !important; transition-duration: 1ms !important; scroll-behavior: auto !important; }
+}
